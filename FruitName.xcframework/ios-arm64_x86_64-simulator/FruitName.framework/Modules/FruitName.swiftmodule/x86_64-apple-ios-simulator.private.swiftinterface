@@ -1,0 +1,34 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
+// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name FruitName
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Alamofire
+import Foundation
+@_exported import FruitName
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+public class RandomFruitsGenertor {
+  public init()
+  public func myController() -> UIKit.UIViewController
+  @objc deinit
+}
+public enum Fruits : Swift.CaseIterable {
+  case mango
+  case orange
+  case papaya
+  case graps
+  case banana
+  public static func == (a: FruitName.Fruits, b: FruitName.Fruits) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [FruitName.Fruits]
+  public static var allCases: [FruitName.Fruits] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension FruitName.Fruits : Swift.Equatable {}
+extension FruitName.Fruits : Swift.Hashable {}
